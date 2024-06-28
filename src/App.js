@@ -19,8 +19,6 @@ function App() {
   });
   const addTodo = () => {
     if(todo.title !== '') {
-      // console.log("todo",todo);
-      // setTodos([...todos, todo]);
       console.log("todo-add",todo);
       axios.post('http://localhost:3004/todos', todo
       ).then((response) => {
